@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+        @await Html.PartialAsync("~/Views/AdminLayout/AdminHeaderPartial.cshtml")
+<body class="sb-nav-fixed">
+    @await Html.PartialAsync("~/Views/AdminLayout/AdminNavbarPartial.cshtml")
+    <div id="layoutSidenav">
+        @await Html.PartialAsync("~/Views/AdminLayout/AdminSidebarPartial.cshtml")
+        <div id="layoutSidenav_content">
+
+            <main>
+                @RenderBody()
+            </main>
+            @await Html.PartialAsync("~/Views/AdminLayout/AdminFooterPartial.cshtml")
+        </div>
+    </div>
+    @await Html.PartialAsync("~/Views/AdminLayout/AdminScriptPartial.cshtml")
+</body>
+</html>

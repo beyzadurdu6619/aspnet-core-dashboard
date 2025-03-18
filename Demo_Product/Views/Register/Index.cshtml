@@ -1,0 +1,103 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = null;
+}
+@model UserRegisterViewModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Register - SB Admin</title>
+    <link href="~/Admin/css/styles.css" rel="stylesheet" />
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-light">
+    <div id="layoutAuthentication">
+        <div id="layoutAuthentication_content">
+            <main>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-7">
+                            <div class="card shadow-lg border-0 rounded-lg mt-5">
+                                <div class="card-header"><h3 class="text-center font-weight-light my-4">Yeni Hesap Oluştur</h3></div>
+                                <div class="card-body">
+                                    <form method="post">
+                                        <div asp-validation-summary="All" class="text-danger"></div>
+
+                                        <div class="row mb-3">
+                                            <div class="col-md-6">
+                                                <div class="form-floating mb-3 mb-md-0">
+                                                    <input class="form-control" asp-for="Name" id="inputFirstName" type="text" placeholder="Adınız" />
+                                                    <label for="inputFirstName">Ad:</label>
+                                                    <span asp-validation-for="Name" class="text-danger"></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-floating">
+                                                    <input class="form-control" asp-for="Surname" id="inputLastName" type="text" placeholder="Soyadınız" />
+                                                    <label for="inputLastName">Soyad:</label>
+                                                    <span asp-validation-for="Surname" class="text-danger"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-floating mb-3">
+                                            <input class="form-control" asp-for="UserName" id="inputUserName" type="text" placeholder="Kullanıcı Adı" />
+                                            <label for="inputUserName">Kullanıcı Adı:</label>
+                                            <span asp-validation-for="UserName" class="text-danger"></span>
+                                        </div>
+
+                                        <div class="form-floating mb-3">
+                                            <input class="form-control" asp-for="Email" id="inputEmail" type="email" placeholder="name@example.com" />
+                                            <label for="inputEmail">Email:</label>
+                                            <span asp-validation-for="Email" class="text-danger"></span>
+                                        </div>
+
+                                        <div class="row mb-3">
+                                            <div class="col-md-6">
+                                                <div class="form-floating mb-3 mb-md-0">
+                                                    <input class="form-control" asp-for="Password" id="inputPassword" type="password" placeholder="Şifre oluştur" />
+                                                    <label for="inputPassword">Şifre:</label>
+                                                    <span asp-validation-for="Password" class="text-danger"></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-floating mb-3 mb-md-0">
+                                                    <input class="form-control" asp-for="ConfirmPassword" id="inputPasswordConfirm" type="password" placeholder="Şifreyi onayla" />
+                                                    <label for="inputPasswordConfirm">Şifreyi Onayla:</label>
+                                                    <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mt-4 mb-0">
+                                            <div class="d-grid">
+                                                <button type="submit" class="btn btn-primary btn-block">Kayıt Ol</button>
+                                            </div>
+                                        </div>
+                                    </form>
+
+                                </div>
+                                <div class="card-footer text-center py-3">
+                                    <div class="small"><a href="/Login/Index">Hesabınız var mı? Giriş Yapın</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+     
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="~/Admin/js/scripts.js"></script>
+</body>
+</html>
+

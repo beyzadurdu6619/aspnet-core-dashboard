@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h1>Profil Bilgileri Düzenleme</h1>
+<form method="post">
+
+    @Html.Label("Adınız:")
+    <input type="text" name="Name" class="form-control" value="" />
+    <br />
+    @Html.Label("Soyadınız:")
+    <input type="text" name="Surname" class="form-control" value="" />
+    <br />
+    @Html.Label("Email:")
+    <input type="email" name="Email" class="form-control" value="" />
+    <br />
+      @Html.Label("Cinsiyet:")
+    <input type="text" name="Gender" class="form-control" value="" />
+    <br />
+    @Html.Label("Şifre:")
+    <input type="password" name="Password" class="form-control" value="" />
+    <br />
+    @Html.Label("Şifre Tekrar:")
+    <input type="password" name="ConfirmPassword" class="form-control" value="" />
+    <br />
+    <a class="btn btn-warning" >Değişiklikleri Kaydet</a>
+
+</form>
+

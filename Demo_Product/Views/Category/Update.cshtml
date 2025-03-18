@@ -1,0 +1,24 @@
+﻿@using EntityLayer.Concrete
+@model Category
+@{
+    ViewData["Title"] = "Update";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h1>Kategori Güncelleme Sayfası</h1>
+
+<div class="form-container">
+
+    <form method="post">
+        <input asp-action="Update" type="hidden" asp-for="Id" />
+
+        <div class="form-group">
+            <label for="Name">Ürün Adı</label>
+            <input type="text" class="form-control" id="Name" asp-for="Name" placeholder="Name">
+        </div>
+        >
+
+        <button type="submit" class="btn btn-primary waves-effect waves-light">Kaydet</button>
+    </form>
+</div>
+

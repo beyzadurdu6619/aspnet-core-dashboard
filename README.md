@@ -7,6 +7,20 @@ Geliştirilen sistem, **giriş paneli, ürün yönetimi, müşteri yönetimi, ka
 
 ---
 
+
+## 📌 Projede Kullanılan Teknolojiler  
+
+✅ **ASP.NET Core** – Modern ve performanslı web geliştirme altyapısı  
+✅ **N Katmanlı Mimari** – Modüler ve ölçeklenebilir yazılım mimarisi  
+✅ **Repository Design Pattern & Generic Repository** – Veri erişim süreçlerinde esneklik ve yeniden kullanılabilirlik  
+✅ **MVC (Model-View-Controller)** – Kod organizasyonu ve ayrıştırma prensipleri  
+✅ **Partial View Kullanımı** – Sayfa bileşenlerini modüler hale getirme  
+✅ **Entity Framework & Code First** – Veritabanı işlemlerinde güçlü ORM desteği  
+✅ **ASP.NET Identity** – Kullanıcı kimlik doğrulama ve yetkilendirme mekanizmaları  
+✅ **Fluent Validation** – Veri doğrulama ve giriş kontrolleri  
+
+Bu yapı sayesinde proje **modüler, yönetilebilir ve genişletilebilir** bir hale getirilmiştir. 🚀
+---
 ## ✨ Proje Modülleri  
 
 ### 🔑 Giriş Paneli  
@@ -49,16 +63,3 @@ Geliştirilen sistem, **giriş paneli, ürün yönetimi, müşteri yönetimi, ka
 - **Hesap oluşturma ve yönetim süreçleri** detaylı şekilde açıklanmıştır.  
 
 ---
-
-## 📌 Projede Kullanılan Teknolojiler  
-
-✅ **ASP.NET Core** – Modern ve performanslı web geliştirme altyapısı  
-✅ **N Katmanlı Mimari** – Modüler ve ölçeklenebilir yazılım mimarisi  
-✅ **Repository Design Pattern & Generic Repository** – Veri erişim süreçlerinde esneklik ve yeniden kullanılabilirlik  
-✅ **MVC (Model-View-Controller)** – Kod organizasyonu ve ayrıştırma prensipleri  
-✅ **Partial View Kullanımı** – Sayfa bileşenlerini modüler hale getirme  
-✅ **Entity Framework & Code First** – Veritabanı işlemlerinde güçlü ORM desteği  
-✅ **ASP.NET Identity** – Kullanıcı kimlik doğrulama ve yetkilendirme mekanizmaları  
-✅ **Fluent Validation** – Veri doğrulama ve giriş kontrolleri  
-
-Bu yapı sayesinde proje **modüler, yönetilebilir ve genişletilebilir** bir hale getirilmiştir. 🚀
